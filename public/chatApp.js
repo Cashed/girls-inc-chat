@@ -10,7 +10,7 @@ $(function() {
     // Set the header to display username
     $('.welcome').text(`Welcome to ${username}'s Board!`);
 
-    // references to elements in the DOM
+    // references
     const body = $('.chat-app');
 
     // listen to the "send" button and post the message
@@ -30,11 +30,10 @@ $(function() {
     });
 
     // TODO: let others post to this board
+    // write function here
 
-    // socket.on('public board message', function(msg) {
-    //     postMessage(msg);
-    // });
 
+    // function for posting a message
     function postMessage(msg) {
         // create an img element for our avatar
         const avatar = $('<img class="avatar">').attr('src', avatarImg);
@@ -57,6 +56,6 @@ $(function() {
     function makeMessagePublic(message) {
         // emit a "public message" event with our message to another board
         socket.emit('public message', message);
-    }   
+    }
     
 });

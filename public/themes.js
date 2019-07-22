@@ -1,0 +1,1 @@
+const themes = ['funky', 'night', 'oldtown'];
