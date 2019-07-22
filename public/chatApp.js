@@ -1,6 +1,6 @@
 $(function() {
     // socket to communicate to main board
-    const socket = io('http://10.132.52.24:3000');
+    const socket = io('http://110.131.226.150:3000');
 
     // custom user info
     // TODO: set this to your liking!
